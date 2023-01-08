@@ -1,8 +1,8 @@
 html{
     scroll-behavior: smooth;
   }
-  .landing{
-    background-image: url('../images/backgrounds/h_img.jpg');
+  .home{
+    background-image: url('../images/h_img.jpg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -12,14 +12,14 @@ html{
     font-family: 'Gabriela', serif;
     /* padding-bottom:5%; */
   }
-  .landing h1{
+  .home h1{
     padding: 2px;
     margin: 5px;
   }
-  .landing p{
+  .home p{
     padding: 2px;
   }
-  #logo{
+  #h_img{
     margin-top: 12px;
     margin-bottom: 24px;
     width: 70px;
