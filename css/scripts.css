@@ -129,7 +129,7 @@ html{
   /* .form-control::-webkit-input-placeholder { 
     color: white;  */
   /* } */
-  #MERGE1{
+  /* #MERGE1{
     width: 30%;
     margin-left: 18%;
     margin-right: 30px;
@@ -145,7 +145,7 @@ html{
     margin-left: 20%;
     padding-bottom: 30px;
     margin-bottom: 20px;
-  }
+  } */
   footer{
     text-align: center;
     padding-top: 30px;
@@ -276,8 +276,21 @@ html{
     }
   }
 
-  .container{
+  .container h2{
+    text-align: center;
+    padding-top:40px;
+    font-family: 'Gabriela', serif;
+  }
+
+  #form_heading{
+    text-align: center;
+    color: white;
+  }
+
+  #form{
     background-image: url(/images/c_image.jpg);
-    background-attachment: fixed;
-    }
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   }
     

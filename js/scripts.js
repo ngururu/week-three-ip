@@ -43,12 +43,14 @@ $(document).ready(function(){
   });
   
   $(document).ready(function(){
-    $("#work1").mouseover(function(){
+    $("#work1").mouseenter(function(){
       $("#overlay").show();
-    }).mouseout(function(){
+    });
+    $("#work1").mouseout(function(){
       $("#overlay").hide();
     });
   });
+
   $(document).ready(function(){
     $("#work2").mouseover(function(){
       $("#overlay2").show();
@@ -94,19 +96,35 @@ $(document).ready(function(){
     });
   });
   
-  $(document).ready(function(){
-    $("form#form34A").submit(function(event){
-      // event.preventDefault();
-      var name = $("input#MERGE1").val();
-      var email = $("input#MERGE0").val();
-      var message = $("textarea#comment").val();
-      if ($("input#MERGE1").val() && $("input#MERGE0").val()){
-        alert (name + ", we have received your message. Thank you for reaching out to us.");
-      }
-      else {
-        alert("Please enter your name and email!");
-      }
+  // $(document).ready(function(){
+  //   $("form#form34A").submit(function(event){
+  //     // event.preventDefault();
+  //     var name = $("input#MERGE1").val();
+  //     var email = $("input#MERGE0").val();
+  //     var message = $("textarea#comment").val();
+  //     if ($("input#MERGE1").val() && $("input#MERGE0").val()){
+  //       alert (name + ", we have received your message. Thank you for reaching out to us.");
+  //     }
+  //     else {
+  //       alert("Please enter your name and email!");
+  //     }
       
-    });
+  //   });
   
+  // });
+
+  $(document).ready(function() {
+    $("#blanks form").submit(function(event) {
+        var name = $("input#name").val();
+        var email = $("input#email").val();
+        var inputAddress = $("input#inputAddress").val();
+        $(".name").text(name);
+        $(".email").text(email);
+        $(".inputAddress").text(inputAddress);
+        $("#sub").show();
+
+
+        event.preventDefault();
+
+    });
   });
