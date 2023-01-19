@@ -8,31 +8,37 @@ $(document).ready(function(){
       $("#development-image").hide();
       $("#development").show();
     });
+    // $("#development").click(function(){
+    //   $("#development").slideUp();
+    //   $("#development-image").slideDown();
+    // });
+
     $("#development").click(function(){
-      $("#development").slideUp();
-      $("#development-image").slideDown();
+     $("#development-image").show(1000);
+     $("#development").hide(1000);
+    //  $("#development").slideUp();
     });
   });
   
   $(document).ready(function(){
     $("#design-image").click(function(){
-      $("#design-image").slideDown('1500').hide('1000');
-      $("#design").show('1500');
+      $("#design-image").hide();
+      $("#design").show();
     });
     $("#design").click(function(){
-      $("#design").slideUp('1500');
-      $("#design-image").slideDown('1500');
+      $("#design-image").show();
+      $("#design").hide();
     });
   });
   
   $(document).ready(function(){
     $("#product-image").click(function(){
-      $("#product-image").slideDown('1500').hide('1000');
-      $("#product").show('1500');
+      $("#product-image").hide();
+      $("#product").show();
     });
     $("#product").click(function(){
-      $("#product").slideUp('1500');
-      $("#product-image").slideDown('1500');
+      $("#product-image").show();
+      $("#product").hide();
     });
   });
   
